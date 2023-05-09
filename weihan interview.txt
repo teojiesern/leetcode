@@ -1,0 +1,31 @@
+[1,1,1,1,0,0,2,0,1], correctAnswerPoint, omitAnswerPoint, wrongAnswerPoint
+
+const pointMap = [omitAnswerPoint, correctAnswerPoint, -wrongAnswerPoint]
+
+return numbers.reduce((sum, number) => {
+  return sum += pointMap[number];
+})
+
+
+
+
+
+
+paranthesisChecker(n)
+
+"()" true
+"(()" false
+"(())((()()()))" true
+
+for loop
+if "("
+  push into stack
+  continue;
+
+if stack.length === 0
+  return false
+
+pop from stack
+end loop
+
+return stack.lenght === 0;
